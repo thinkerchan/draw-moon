@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>看谁月亮画得圆</title>
+  <script>
+    !function (a) { var b, c; /Android (\d+\.\d+)/.test(navigator.userAgent) ? (b = parseFloat(RegExp.$1), b > 2.3 ? (c = parseInt(window.screen.width) / a, document.write('<meta name="viewport" content="width=' + a + ",minimum-scale=" + c + ",maximum-scale=" + c + ', target-densitydpi=device-dpi">')) : document.write('<meta name="viewport" content="width=' + a + ',target-densitydpi=device-dpi">')) : document.write('<meta name="viewport" content="width=' + a + ',user-scalable=no,target-densitydpi=device-dpi,minimal-ui,viewport-fit=cover">') }(750);
+  </script>
+  <link rel="stylesheet" href="index.css?v=1604">
+</head>
+
+<body>
+  <!-- content s -->
+  <div class="g-doc" id="Jdoc">
+    <div class="slogan"><img src="images/solgan.png"></div>
+    <div class="cir" id="Jref">
+      <svg class="svg-cir" id="Jsvg" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="280" cy="280" r="280"></circle>
+      </svg>
+    </div>
+    <i class="poa-item poa-item-1">云1</i>
+    <i class="poa-item poa-item-2">云2</i>
+    <i class="poa-item poa-item-3">兔子</i>
+    <canvas class="can" id="canvas"></canvas>
+    <div class="section-ft">
+      <p class="desc">根据半径一笔勾勒出你的团圆形状</p>
+    </div>
+    <!-- 参考 -->
+    <div class="test" id="Jtest"><i id="Jcover"></i></div>
+
+    <!-- tips s-->
+    <i class="tips-pop" id="JpopTips"></i>
+    <!-- tips e-->
+
+    <!-- 弹窗 s-->
+    <div class="pop" id="Jpop">
+      <!-- 游戏规则 -->
+      <div class="pop-box pop-box-con pop-rule" id="JpopRule">
+        <a id="JclosePopRule" class="pop-box pop-close-btn"></a>
+      </div>
+
+      <!-- 请先画月亮 -->
+      <div class="pop-box pop-box-con pop-start-tips" id="JstartTips">
+        <a id="JcloseStartTips" class="pop-box pop-start-tips-btn"></a>
+      </div>
+
+      <!-- 重来 -->
+      <div class="pop-box pop-box-con pop-restart" id="Jrestart">
+        <a id="JcloseRestart" class="pop-box pop-restart-btn"></a>
+      </div>
+
+      <!-- 合格 -->
+      <div class="pop-box pop-box-con pop-win" id="Jwin">
+        <p class="txt txt-1">团圆指数<span id="Jscore">0</span>分</p>
+        <!-- <p class="txt txt-2">你的团圆指数超过了<br><span id="Jpercent">0</span>%用户</p> -->
+        <a id="JcloseWin" class="pop-box pop-win-btn"></a>
+      </div>
+    </div>
+    <!-- 弹窗 e -->
+    <div class="mask" id="Jmask">
+      <p class="mask-tips">点击蒙层开始游戏</p>
+    </div>
+  </div>
+  <!-- <script src="vconsole.min.js"></script> -->
+  <script src="game.js?v=1604"></script>
+  <script src="index.js?v=1604"></script>
+</body>
+</html>
